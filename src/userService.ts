@@ -7,10 +7,14 @@ type User = {
 
 let nextId: number = 0;
 
-function createUser(users: User[], user: User): User {
-    user.id = nextId;
-    users.push(user);
+function createUser(users: User[], name: string, age: number): User {
+    const user: User = {
+        id: nextId,
+        name,
+        age
+    };
     nextId++;
+    users.push(user);
     return user;
 }
 
@@ -27,11 +31,19 @@ function getUsersById(users: User[], id: number): User | null {
     return null;
 }
 
-function updateUser(users: User[], id: number, data: User): User | null {
+function updateUser(users: User[], id: number, data: Partial<Omit<User, "id">>): User | null {
     const user = getUsersById(users, id);
 
     if (user) {
-        Object.assign(user, data, { id: user.id });
+        if (data.name !== undefined) {
+            user.name = data.name;
+        }
+
+        if (data.age !== undefined) {
+            user.age = data.age;
+        }
+
+        return user;
     }
 
     return null;
