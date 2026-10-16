@@ -1,3 +1,4 @@
+import { isValidName, isValidAge, normalizeName, isValidArray } from "./userUtils.js";
 
 type User = {
     id: number,
