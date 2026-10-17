@@ -1,6 +1,6 @@
 import { isValidName, isValidAge, normalizeName, isValidArray } from "./userUtils.js";
 
-type User = {
+export type User = {
     id: number,
     name: string,
     age: number
