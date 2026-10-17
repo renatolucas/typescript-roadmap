@@ -8,7 +8,7 @@ export type User = {
 
 let nextId: number = 0;
 
-function createUser(users: User[], name: string, age: number): User {
+export function createUser(users: User[], name: string, age: number): User {
     if (!isValidAge(age)) {
         throw new TypeError("Invalid age.");
     }

@@ -1,11 +1,20 @@
-import type { User } from "./userService.js";
+import { User, createUser } from "./userService.js";
 
-const users: Partial<User>[] = [];
-const user1: Partial<User> = { name: 'Jhon', age: 30 };
-const user2: Partial<User> = { name: 'Robert', age: 18 };
-const user3: Partial<User> = { name: 'Leo', age: 25 };
-const user4: Partial<User> = { name: 'Maths', age: 44 };
-const user5: Partial<User> = { name: 'Robert', age: 68 };
+const users: User[] = [];
 
-users.push(user1, user2, user3, user4, user5);
-console.table(users)
+try {
+    console.log("Creating users...");
+    console.log(createUser(users, 'Jhon', 30));
+    console.log(createUser(users, 'Robert', 18));
+    console.log(createUser(users, 'Leo', 25));
+    console.log(createUser(users, 'Matt', 44));
+    console.log(createUser(users, 'Sophie', 24));
+} catch (e: unknown) {
+    if (e instanceof Error) {
+        console.error('Process error: ', e.message);
+    }
+
+}
+
+
+
