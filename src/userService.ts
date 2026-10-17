@@ -32,7 +32,7 @@ export function createUser(users: User[], name: string, age: number): User {
     return user;
 }
 
-function getUsers(users: User[]): User[] {
+export function getUsers(users: User[]): User[] {
     if (!isValidArray(users)) {
         throw new TypeError("Invalid array");
     }
@@ -40,7 +40,7 @@ function getUsers(users: User[]): User[] {
     return users;
 }
 
-function getUsersById(users: User[], id: number): User | null {
+export function getUsersById(users: User[], id: number): User | null {
     if (!isValidArray(users)) {
         throw new TypeError("Invalid array");
     }
@@ -53,7 +53,7 @@ function getUsersById(users: User[], id: number): User | null {
     return null;
 }
 
-function updateUser(users: User[], id: number, data: Partial<Omit<User, "id">>): User | null {
+export function updateUser(users: User[], id: number, data: Partial<Omit<User, "id">>): User | null {
     const user = getUsersById(users, id);
 
     if (!user) {
@@ -79,7 +79,7 @@ function updateUser(users: User[], id: number, data: Partial<Omit<User, "id">>):
     return user;
 }
 
-function deleteUser(users: User[], id: number): User | null {
+export function deleteUser(users: User[], id: number): User | null {
     const user = getUsersById(users, id);
 
     if (user) {
