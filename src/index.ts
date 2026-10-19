@@ -34,7 +34,6 @@ try {
 
     //Error Testing
     console.log("Errors...");
-    const testError: User[] = [];
     console.log(createUser(users, '', 5));
 
 } catch (e: unknown) {
