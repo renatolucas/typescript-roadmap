@@ -1,4 +1,12 @@
-import { User, createUser, getUsers, getUsersById, updateUser, deleteUser } from "./userService.js";
+import type { User } from "./userService.js";
+
+import {
+    createUser,
+    getUsers,
+    getUsersById,
+    updateUser,
+    deleteUser
+} from "./userService.js";
 
 const users: User[] = [];
 
@@ -24,9 +32,14 @@ try {
 
     console.table(users);
 
+    //Error Testing
+    console.log("Errors...");
+    const testError: User[] = [];
+    console.log(createUser(users, '', 5));
+
 } catch (e: unknown) {
     if (e instanceof Error) {
-        console.error('Process error: ', e.message);
+        console.error('Process error:', e.message);
     }
 
 }
