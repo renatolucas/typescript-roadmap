@@ -6,3 +6,8 @@ export interface Order {
     amount: number;
     status: OrderStatus;
 }
+
+export interface AppConfig {
+    currency: string;
+    taxRate: number;
+}
