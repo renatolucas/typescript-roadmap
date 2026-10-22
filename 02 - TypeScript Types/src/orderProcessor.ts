@@ -24,3 +24,11 @@ export function describeOrder(order: Order): string {
     }
 
 }
+
+export function validateOrderId(value: unknown): number | null {
+    if (typeof value === "number" && Number.isInteger(value) && value > 0) {
+        return value;
+    }
+
+    return null;
+}
