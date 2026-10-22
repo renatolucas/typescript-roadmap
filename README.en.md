@@ -19,6 +19,7 @@ These concepts will be progressively incorporated as my studies advance.
 | Topic | Description |
 |---|---|
 | [01 - Introduction to TypeScript](./01-introduction-to-typescript/) | In-memory User CRUD exploring TypeScript fundamentals, configuration, compilation, and JavaScript interoperability. |
+| [02 - TypeScript Types](./02%20-%20TypeScript%20Types/) | Order processing application exploring interfaces, union types, type narrowing, unknown, never, as const, and satisfies. |
 
 ## Technologies
 

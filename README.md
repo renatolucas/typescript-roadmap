@@ -19,6 +19,7 @@ Esses conceitos serão incorporados progressivamente, conforme o avanço dos est
 | Tema | Descrição |
 |---|---|
 | [01 - Introduction to TypeScript](./01-introduction-to-typescript/) | CRUD de usuários em memória para praticar fundamentos de TypeScript, configuração, compilação e interoperabilidade com JavaScript. |
+| [02 - TypeScript Types](./02%20-%20TypeScript%20Types/) | Processador de pedidos com interfaces, Union Types, Type Narrowing, unknown, never, as const e satisfies. |
 
 ## Tecnologias
 
