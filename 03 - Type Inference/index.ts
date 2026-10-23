@@ -32,5 +32,10 @@ function calculateInventoryValue(products: Product[]) {
     return products.reduce((acc, product) => acc + product.price * product.quantity, 0);
 }
 
+function getProductNames(products: Product[]) {
+    return products.map(product => product.name);
+}
+
 console.log(calculateInventoryValue(products));
+console.table(getProductNames(products));
 
