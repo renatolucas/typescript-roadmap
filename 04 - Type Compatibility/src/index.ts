@@ -79,3 +79,26 @@ interface CompleteProfile {
 //const testOP1: CompleteProfile = userProfile; //Error
 //const testOP2: CompleteProfile = userProfileEmail; //Error
 
+//Function Compatibility
+type UserFormatter = (user: User) => string;
+
+function formatUser(user: User): string {
+    return user.name;
+}
+
+function formatEmployee(employee: Employee): string {
+    return `Name: ${employee.name} - Department: ${employee.department}`;
+}
+
+const testFC1: UserFormatter = formatUser;
+//const testFC2: UserFormatter = formatEmployee; //Error
+console.log(testFC1(user));
+
+const employeeUser: Employee = {
+    id: 1,
+    name: 'Marc',
+    department: 'IT'
+};
+
+const userEmployee: User = employeeUser;
+console.log(userEmployee);//show department
