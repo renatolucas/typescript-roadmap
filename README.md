@@ -22,6 +22,8 @@ Esses conceitos serão incorporados progressivamente, conforme o avanço dos est
 | [02 - TypeScript Types](./02%20-%20TypeScript%20Types/) | Processador de pedidos com interfaces, Union Types, Type Narrowing, unknown, never, as const e satisfies. |
 | [03 - Type Inference](./03%20-%20Type%20Inference/) | Um pequeno exercício para praticar inferência de tipos.|
 | [04 - Type Compatibility](./04%20-%20Type%20Compatibility/) | Um pequeno exercício para praticar compatibilidade de tipos|
+| [05 - Combining Types](./05%20-%20Combining%20Types/) | Gerenciador de chamados para praticar Union Types, Intersection Types, Type Aliases e o operador `keyof`. |
+
 ## Tecnologias
 
 TypeScript · JavaScript · Node.js

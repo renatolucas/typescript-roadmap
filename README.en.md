@@ -22,6 +22,7 @@ These concepts will be progressively incorporated as my studies advance.
 | [02 - TypeScript Types](./02%20-%20TypeScript%20Types/) | Order processing application exploring interfaces, union types, type narrowing, unknown, never, as const, and satisfies. |
 | [03 - Type Inference](./03%20-%20Type%20Inference/) | A short exercise to practice Type Inference.|
 | [04 - Type Compatibility](./04%20-%20Type%20Compatibility/) | A short exercise to practice Type Compability|
+| [05 - Combining Types](./05%20-%20Combining%20Types/) | Ticket management project to practice Union Types, Intersection Types, Type Aliases, and the `keyof` operator. |
 
 ## Technologies
 
